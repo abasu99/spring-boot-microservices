@@ -85,12 +85,6 @@
 			<plugin>
 				<groupId>org.springframework.boot</groupId>
 				<artifactId>spring-boot-maven-plugin</artifactId>
-				<!--image name configured to build using buildpacks-->
-				<configuration>
-					<image>
-						<name>basu99/accounts:spring</name>
-					</image>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
