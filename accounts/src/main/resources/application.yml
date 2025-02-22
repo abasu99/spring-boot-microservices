@@ -17,5 +17,16 @@ spring:
     property:
       hibernate:
         globally_quoted_identifiers: true
+  config:
+    import:
+      - "application-tst.yml"
+      - "application-ppd.yml"
+    profiles:
+      active:
+        - "tst"
+
 server:
   port: 8080
+
+accounts:
+  message: "Welcome to SBI APIs - Dev environment"
