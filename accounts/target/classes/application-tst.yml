@@ -1,0 +1,7 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "tst"
+
+accounts:
+  message: "Welcome to SBI APIs - Test environment"

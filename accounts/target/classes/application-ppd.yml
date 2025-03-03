@@ -1,0 +1,7 @@
+#spring:
+#  config:
+#    activate:
+#      on-profile: "ppd"
+
+accounts:
+  message: "Welcome to SBI APIs - PreProd environment"

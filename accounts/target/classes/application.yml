@@ -1,0 +1,32 @@
+spring:
+  application:
+    name: demo
+  datasource:
+    url: jdbc:h2:mem:testdb
+    driverClassName: org.h2.Driver
+    username: ab
+    password: ''
+  h2:
+    console:
+      enabled: true # to enable h2 console from browser so that developer can log in
+  jpa:
+    database-platform: org.hibernate.dialect.H2Dialect # DB platform
+    hibernate:
+      ddl-auto: create-drop # create the tables based on sql query automatically on start
+    show-sql: true # show sql commands on terminal for better understanding
+    property:
+      hibernate:
+        globally_quoted_identifiers: true
+  config:
+    import:
+      - "application-tst.yml"
+      - "application-ppd.yml"
+    profiles:
+      active:
+        - "tst"
+
+server:
+  port: 8080
+
+accounts:
+  message: "Welcome to SBI APIs - Dev environment"
